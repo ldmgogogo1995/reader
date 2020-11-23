@@ -1,0 +1,117 @@
+header {
+    height: 70px;
+    background: #fff;
+    -webkit-box-shadow: 0 4px 12px 0 hsla(0,0%,60%,.1);
+    box-shadow: 0 4px 12px 0 hsla(0,0%,60%,.1);
+    position: fixed;
+    width: 100%;
+    z-index: 9999;
+    overflow: hidden;
+    .wrap{
+        width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        padding-top:17px;
+        overflow: hidden;
+        .icon-cart{
+            width:25px;
+            height: 25px;
+            position: relative;
+            a{
+                display: block;
+                width: 25px;
+                height: 25px;
+                img{
+                    width: 25px;
+                    height: 25px;
+                }
+            }
+            .cart-num{
+                width: 15px;
+                height: 15px;
+                position: absolute;
+                left:10px;
+                top:-10px;
+                color: white;
+                text-align: center;
+                font-size: 12px;
+                border-radius: 50%;
+                background: red;
+            }
+            
+        }
+    }
+   .logo>a{
+        display: block;
+        width: 125px;
+        height: 35px;
+        background-image: url(/images/logo.png);
+        background-size: contain;
+    }
+    .nav {
+        padding-top:8px;
+        overflow: hidden;
+        li{
+            float: left;
+            margin-left: 75px;
+            font-size: 14px;
+            letter-spacing: .22px;
+            text-align: left;
+            padding-bottom: 12px;
+            border-bottom: 3px solid transparent;
+            cursor: pointer;
+            a.ac{
+                color: #1faf88;
+            }
+        }
+        li:hover a{
+            color: #1faf88;
+        }
+        // li:first-child{
+        //     border-bottom: 3px solid #1faf88;
+        // }
+        // li:first-child a{
+        //     color: #1faf88;
+        // }
+        li:hover{
+            border-bottom: 3px solid #1faf88;
+        }
+        li.ac{
+            border-bottom: 3px solid #1faf88;
+        }
+    }
+    
+}
+.login-register{
+    
+    a{
+        display: block;
+        color: #e75854;
+        width: 150px;
+        height: 30px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-weight: 700;
+        line-height: 80px;
+        overflow: hidden;
+        text-align: center;
+        line-height: 30px;
+    }
+}
+.unlogin-register{
+    color: #e75854;
+        min-width: 150px;
+        height: 30px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-weight: 700;
+        line-height: 80px;
+        overflow: hidden;
+        text-align: center;
+        line-height: 30px;
+        display: none;
+        b{
+            cursor: pointer;
+        }
+}

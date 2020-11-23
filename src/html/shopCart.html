@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>shopCart</title>
+    <link rel="stylesheet" href="/css/shopCart.css">
+    <script src="/libs/require.js/require.js" data-main='/js/shopCart'></script>
+</head>
+
+<body>
+    <div id="navc">
+        <header>
+        </header>
+    </div>
+    <div class="shop-cart">
+        <div class="cart-page-title">
+            <ul class="shopping-step">
+                <li class="first">
+                    查看购物车
+                </li>
+                <li class="second">
+                    填写订单
+                </li>
+                <li class="last">
+                    付款完成购买
+                </li>
+            </ul>
+        </div>
+        <div class="tips">
+            <div class="tipsbox">
+                <a href="javascript:;"></a>
+                <strong>温馨提示:</strong>1. 选购单中的商品不保留库存，请及时结算。 2. 商品的价格、相关活动信息及库存以订单提交时为准。
+            </div>
+        </div>
+        <div class="cart-pic">
+            <div class="cart-wrap">
+                <div class="cart-img">
+
+                </div>
+                <p>购物车空空的哦，去看看心仪的商品吧~</p>
+                <a href="/html/list.html">去购物</a>
+            </div>
+        </div>
+        <div class="order-pay" id="order-pay">
+            <div class="cart-title">
+                <p class="left" style="width:6%;">
+                    <label>
+                        <input type="checkbox" class="allPick" id="allPick">
+                    </label>
+                    <i class="all-pick"></i>&nbsp;全选
+                </p>
+                <p style="width:35%">商品信息</p>
+                <p style="width:14%">单价</p>
+                <p style="width:15%;">数量</p>
+                <p style="width:16%;">小计</p>
+                <p class="right" style="width:11.8%;">操作</p>
+            </div>
+            <div class="ordinery">
+                <div class="cart-table">
+                    <ul class="table-group" id="table-group">
+                    </ul>
+                        
+                        <script type="text.html" id="cart-template">
+                            {{each cart item}}
+                            <li class="sell-box" data-id = "{{item.id}}">
+                                    <span class="pick">
+                                        <label>
+                                            <input type="checkbox" class="checkbox">
+                                        </label>
+                                    </span>
+                                    <div class="pay-td">
+                                        <div class="pay-icon">
+                                            <a href="javascript:;">
+                                                <img src="{{item.imgs[0]}}"alt="">
+                                            </a>
+                                        </div>
+                                        <div class="pay-info">
+                                            <a href="javascript:;">
+                                                {{item.name}}
+                                            </a>
+                                            <em class="pay-detail">
+                                                <span>
+                                                    <b class="tit">颜色：白色</b>
+        
+                                                    尺码：{{item.size}}
+                                                </span>
+                                            </em>
+                                        </div>
+                                    </div>
+                                    <div class="price-td">
+                                        <p class="product-price">¥{{item.price}}</p>
+                                    </div>
+                                    <div class="num-td">
+                                        <div class="num-cont">
+                                            <span class="mius">
+                                                -
+                                            </span>
+                                            <input type="text" class = "input-num" value="{{item.num}}">
+                                            <span class="puls">
+                                                +
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="total-td">
+                                        ￥<span class="total">{{(item.price*item.num).toFixed(2)}}</span>
+                                    </div>
+                                    <div class="operation-td">
+                                        <span class="del-btn">删除</span>
+                                        <span class="col-btn">移入收藏</span>
+                                    </div>
+                                </li>
+                            {{/each}}
+                        </script>
+                    
+                </div>
+            </div>
+            <div class="cart-submit">
+                <div class="submit-wrap">
+                    <div class="submit-content">
+                        <div class="submit-option">
+                            <a class="delAll delete-all-sel" href="javascript:void(0);" id="delcheck">删除选中商品</a>
+                            <a class="removeAll remove-all-2fav" href="javascript:void(0);">移入收藏夹</a>
+                            <a class="emptyDisabled clean-all-disable" href="javascript:void(0);">清空失效商品</a>
+                        </div>
+                        <p class="select-num">
+                            已选商品
+                            <strong class="ins">
+                                0
+                            </strong>
+                            件
+                        </p>
+                        <div class="price-sum">
+                            <p class="sum">
+                                应付金额（不含邮费）：
+                                <strong>
+                                    ￥<span id="allPrice">0</span>
+                                </strong>
+                            </p>
+                            <p class="offer">活动优惠：¥ 0.00</p>
+                        </div>
+                        <a href="javascript:void(0);" id="Y_SubmitBtn" class="btn-account right"
+                            data-ensureurl="//www.yohobuy.com/cart/ensure">去结算</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="bottom">
+
+    </div>
+    <footer></footer>
+</body>
+
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>index</title>
+    <link rel="stylesheet" href="/css/index.css">
+    <!-- <script src="/src/libs/jquery-plugins/swiper/swiper.min.js"></script> -->
+</head>
+
+<body>
+    <div id="nav">
+        <header></header>
+    </div>
+    <div class="home">
+        <div class="banner" id="slider">
+                <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide"><img src="/images/banner.png" alt=""></div>
+                          <div class="swiper-slide"><img src="/images/banner1.png" alt=""></div>
+                          <div class="swiper-slide"><img src="/images/banner2.png" alt=""></div>
+                          <div class="swiper-slide"><img src="/images/banner3.png" alt=""></div>
+                          <div class="swiper-slide"><img src="/images/banner4.png" alt=""></div>
+                          <div class="swiper-slide"><img src="/images/banner.png" alt=""></div>
+                        </div>
+                        <!-- Add Pagination -->
+                        <div class="swiper-pagination"></div>
+                        <!-- Add Arrows -->
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                      </div>
+        </div>
+        <div class="center">
+            <div class="center-flex">
+                <div class="center-1">
+                    <div class="icon">
+                        <img src="data:image/png;base64,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"
+                            alt="">
+                    </div>
+                    <div class="erwm">
+                        <img src="https://www.duzhe.com/img/duzheCode.26440db2.png" alt="">
+                    </div>
+                    <div class="font">
+                        <h5>读者客户端</h5>
+                        <p>扫描二维码，下载读者客户端</p>
+                    </div>
+                </div>
+                <div class="center-2">
+                    <div class="icon">
+                        <img src="data:image/png;base64,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"
+                            alt="">
+                    </div>
+                    <div class="erwm">
+                        <img src="https://www.duzhe.com/img/duzheCode.26440db2.png" alt="">
+                    </div>
+                    <div class="font">
+                        <h5>读者微信公众号</h5>
+                        <p>扫描二维码，关注读者公众号</p>
+                    </div>
+                </div>
+                <div class="center-3">
+                    <div class="icon"><img
+                            src="data:image/png;base64,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"
+                            alt=""></div>
+                    <div class="erwm"><img src="https://www.duzhe.com/img/duzheCode.26440db2.png" alt=""></div>
+                    <div class="font">
+                        <h5>读者官方微博</h5>
+                        <p>扫描二维码，关注读者微博</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bottom">
+            <div class="Reader-platform" id="Reader-platform">
+                <div class="contact-us">
+                    <h1>读者平台</h1>
+                    <h2>Reader Platform</h2>
+                </div>
+                <ul>
+                    <!-- <li>
+                                <div class="platform-icon1"><img src="" alt=""></div>
+                            
+                                <div class="platform-word"><i>新媒体写作成长营</i></div>
+                            </li>
+                            <li>
+                                <div class="platform-icon2"><img src="" alt=""></div>
+                                <div class="platform-word"><i>新媒体写作成长营</i></div>
+                            </li>
+                            <li>
+                                <div class="platform-icon3"><img src="" alt=""></div>
+                                <div class="platform-word"><i>新媒体写作成长营</i></div>
+                            </li> -->
+                </ul>
+                <ul>
+                    <li>
+                        <div class="platform-icon4"><img src="" alt=""></div>
+                        <div class="platform-word"><i>新媒体写作成长营</i></div>
+                    </li>
+                    <li>
+                        <div class="platform-icon5"><img src="" alt=""></div>
+                        <div class="platform-word"><i>新媒体写作成长营</i></div>
+                    </li>
+                    <li>
+                        <div class="platform-icon6"><img src="" alt=""></div>
+                        <div class="platform-word"><i>新媒体写作成长营</i></div>
+                    </li>
+                </ul>
+                <script type="text.html" id='platform-template'>
+                                {{each list shop}}
+                                <li>
+                                    <div class="platform-icon3"><img src="{{shop.img}}" alt=""></div>
+                                    <div class="platform-word"><i>{{shop.title}}</i></div>
+                                </li>
+                                {{/each}}
+                            </script>
+            </div>
+        </div>
+    </div>
+    <footer></footer>
+    <script src="/libs/require.js/require.js" data-main='/js/index'></script>
+</body>
+
+</html>

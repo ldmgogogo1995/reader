@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>list</title>
+    <link rel="stylesheet" href="/css/list.css">
+</head>
+
+<body>
+    <div id="navl">
+        <header></header>
+    </div>
+    <div class="magezine">
+        <div class="search">
+            <input type="text" class="keyWord" id="keyWord">
+            <button class="search1">
+                <span>搜索</span>
+            </button>
+            <ul id="ts">
+
+            </ul>
+        </div>
+        <div class="search-list">
+            <div class="row" id="row">
+                <div class="search-bottom">
+                    <div class="search-img"><img src="" alt=""></div>
+                    <p>2019年 第15期</p>
+                    <a href=""><b>查看目录</b></a>
+                </div>
+                <div class="search-bottom">
+                    <div class="search-img"><img src="" alt=""></div>
+                    <p>2019年 第15期</p>
+                    <b>查看目录</b>
+                </div>
+                <div class="search-bottom">
+                    <div class="search-img"><img src="" alt=""></div>
+                    <p>2019年 第15期</p>
+                    <b>查看目录</b>
+                </div>
+                <div class="search-bottom">
+                    <div class="search-img"><img src="" alt=""></div>
+                    <p>2019年 第15期</p>
+                    <b>查看目录</b>
+                </div>
+                <div class="search-bottom">
+                    <div class="search-img"><img src="" alt=""></div>
+                    <p>2019年 第15期</p>
+                    <b>查看目录</b>
+                </div>
+                <div class="search-bottom">
+                    <div class="search-img"><img src="" alt=""></div>
+                    <p>2019年 第15期</p>
+                    <b>查看目录</b>
+                </div>
+                <div class="search-bottom">
+                    <div class="search-img"><img src="" alt=""></div>
+                    <p>2019年 第15期</p>
+                    <b>查看目录</b>
+                </div>
+                <div class="search-bottom">
+                    <div class="search-img"><img src="" alt=""></div>
+                    <p>2019年 第15期</p>
+                    <b>查看目录</b>
+                </div>
+                <div class="search-bottom">
+                    <div class="search-img"><img src="" alt=""></div>
+                    <p>2019年 第15期</p>
+                    <b>查看目录</b>
+                </div>
+                <div class="search-bottom">
+                    <div class="search-img"><img src="" alt=""></div>
+                    <p>2019年 第15期</p>
+                    <b>查看目录</b>
+                </div>
+                <div class="search-bottom">
+                    <div class="search-img"><img src="" alt=""></div>
+                    <p>2019年 第15期</p>
+                    <b>查看目录</b>
+                </div>
+                <div class="search-bottom">
+                    <div class="search-img"><img src="" alt=""></div>
+                    <p>2019年 第15期</p>
+                    <b>查看目录</b>
+                </div>
+            </div>
+            <script type="text.html" id="list">
+                {{each list item}}
+                    <div class="search-bottom">
+                        <div class="search-img"><img src="{{item.img}}" alt=""></div>
+                        <p>{{item.title}}</p>
+                        <a href="/html/detail.html?id={{item.id}}"><b>查看目录</b></a>
+                    </div>
+                    <!-- <div class="test"><img src="{{item.img}}" alt=""></div> -->
+                {{/each}}
+            </script>
+
+        </div>
+        <div class="pagination">
+            <div class="page">
+
+            </div>
+        </div>
+    </div>
+    <footer></footer>
+    <script src="/libs/require.js/require.js" data-main='/js/list'></script>
+</body>
+
+</html>

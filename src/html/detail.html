@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>detail</title>
+    <link rel="stylesheet" href="/css/detail.css">
+</head>
+<body>
+    <div id="navd">
+        <header></header>
+    </div>
+    <div class="detail-content">
+        <div class="detail-nav"><span>读者详情页  TAKARA TOMY  梦之仿真车-头文字D（AE86)</span></div>
+        <div class="detail-main" id="detail-main">
+            <div class="main-left">
+                    <div class="exzoom" id="exzoom"> 
+                            <!--大图区域-->
+                            <div class="exzoom_img_box">
+                          <ul class='exzoom_img_ul'>
+                            {{each detail.imgs img}}
+                            <li><img src={{img}}/></li>
+                            {{/each}}
+                           </ul>
+                        </div>
+                            <!--缩略图导航-->
+                            <div class="exzoom_nav"></div>
+                            <!--控制按钮-->
+                            <p class="exzoom_btn"> <a href="javascript:void(0);" class="exzoom_prev_btn"> &lt; </a> <a href="javascript:void(0);" class="exzoom_next_btn"> &gt; </a> </p>
+                          </div>
+            </div>
+            <div class="main-right">
+                <h1 class="name">
+                        {{detail.name}}
+                    </h1>
+                <div class="line"></div>
+                <p class="market-price">
+                    <span class="price-row">
+                        <span class="title">吊牌价:</span>
+                        <span class="price">￥{{item.price}}</span>
+                    </span>
+                    <span class="desc">
+
+                    </span>
+                </p>
+                <div class="wrapper">
+                    <span class="pull-sale">促  销： </span>
+                    <div class="pull-left">
+                        <ul class="activity">
+                            <li class="promotion-item">
+                                <span class="ac-type">加价购</span>
+                                <span class="ac-des">
+                                    <span>全场下单加¥10换购YOHO!当期热销新刊</span>
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="small-list">
+                    <ul>
+                        <li>
+                            <a class="left-title">领  券：</a>
+                        </li>
+                        <li class="more-coupon">
+                                <div class="small">
+                                        <a href="" class="small-desc">满¥299减¥30</a>
+                                </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="line"></div>
+                <div class="trade-content">
+                    <div class="type-chose">
+                        <div class="chose-color">
+                            <span>颜  色：</span>
+                            <ul class="colors">
+                                <li class="focus">
+                                    <span class="color-name">彩色</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="chose-size">
+                            <span class="span-size">
+                                <div class="i">尺码</div>
+                                :
+                            </span>
+                            <div class="size-wrapper">
+                                <ul class="size">
+                                    <li class="li-size">
+                                        {{detail.size}}
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="chose-count">
+                            <span class="span-count">数  量：</span>
+                            <div class="calc">
+                                <span class="minus">-</span>
+                                <div class="num">1</div>
+                                <span class="add">+</span>
+                            </div>
+                            
+                        </div>
+                        <div class="lin"></div>
+                    </div>
+                    <div class="cart-btn">
+                        <div class="cbtn">
+                            加入购物车
+                        </div>
+                        <div class="xbtn">收藏商品</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script type="html.text" id="detail-template">
+            <div class="main-left">
+                <div class="exzoom" id="exzoom"> 
+                        <!--大图区域-->
+                        <div class="exzoom_img_box">
+                      <ul class='exzoom_img_ul'>
+                        {{each detail.imgs img}}
+                        <li><img src={{img}}></li>
+                        {{/each}}
+                       </ul>
+                    </div>
+                        <!--缩略图导航-->
+                        <div class="exzoom_nav"></div>
+                        <!--控制按钮-->
+                        <p class="exzoom_btn"> <a href="javascript:void(0);" class="exzoom_prev_btn"> &lt; </a> <a href="javascript:void(0);" class="exzoom_next_btn"> &gt; </a> </p>
+                      </div>
+        </div>
+        <div class="main-right">
+            <h1 class="name">
+                    {{detail.name}}
+                </h1>
+            <div class="line"></div>
+            <p class="market-price">
+                <span class="price-row">
+                    <span class="title">吊牌价:</span>
+                    <span class="price">￥{{detail.price}}</span>
+                </span>
+                <span class="desc">
+
+                </span>
+            </p>
+            <div class="wrapper">
+                <span class="pull-sale">促  销： </span>
+                <div class="pull-left">
+                    <ul class="activity">
+                        <li class="promotion-item">
+                            <span class="ac-type">加价购</span>
+                            <span class="ac-des">
+                                <span>全场下单加¥10换购YOHO!当期热销新刊</span>
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="small-list">
+                <ul>
+                    <li>
+                        <a class="left-title">领  券：</a>
+                    </li>
+                    <li class="more-coupon">
+                            <div class="small">
+                                    <a href="" class="small-desc">满¥299减¥30</a>
+                            </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="line"></div>
+            <div class="trade-content">
+                <div class="type-chose">
+                    <div class="chose-color">
+                        <span>颜  色：</span>
+                        <ul class="colors">
+                            <li class="focus">
+                                <span class="color-name">彩色</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="chose-size">
+                        <span class="span-size">
+                            <div class="i">尺码</div>
+                            :
+                        </span>
+                        <div class="size-wrapper">
+                            <ul class="size">
+                                <li class="li-size">
+                                    {{detail.size}}
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="chose-count">
+                        <span class="span-count">数  量：</span>
+                        <div class="calc">
+                            <span class="minus">-</span>
+                            <div class="num">1</div>
+                            <span class="add">+</span>
+                        </div>
+                        
+                    </div>
+                    <div class="lin"></div>
+                </div>
+                <div class="cart-btn">
+                    <div class="cbtn" id = "addCart">
+                        加入购物车
+                    </div>
+                    <div class="xbtn">收藏商品</div>
+                </div>
+            </div>
+        </div>
+        </script>
+    </div>
+    <footer></footer>
+    <script src=""></script>
+    <script src="/libs/require.js/require.js" data-main='/js/detail'></script>
+</body>
+</html>

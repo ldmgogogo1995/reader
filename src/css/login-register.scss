@@ -1,0 +1,10 @@
+@import 'modules/reset';
+@import 'modules/header';
+@import 'modules/footer';
+@import '../libs/css/login-register.css/component.scss';
+@import '../libs/css/login-register.css/content.scss';
+@import '../libs/css/login-register.css/demo.scss';
+@import '../libs/css/login-register.css/normalize.scss';
+#navr{
+    height: 70px;
+}
